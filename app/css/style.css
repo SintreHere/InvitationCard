@@ -1,0 +1,40 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+@import 'additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+@font-face {
+    font-family: 'Sam';
+    src: url('../../public/font/Higuen\ Serif.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family: 'True';
+    src: url('../../public/font/Mistrully.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family: 'Kabel';
+    src: url('../../public/font/KabelMedium.ttf')
+    format('truetype');
+}
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+    display: none;
+}
+.bg{
+
+    background-image: url('../../public/images/Untitled\ design.png');
+}
